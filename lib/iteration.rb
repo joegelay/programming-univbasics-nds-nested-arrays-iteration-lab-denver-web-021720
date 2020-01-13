@@ -13,9 +13,10 @@ while row_index < src.count do
   element_index = 0
   while element_index < src[row_index].count do
     topping_one = src[row_index][element_index]
-    element_index += 1
+    
     topping_two = src[row_index][element_index]
     pizza_love.push("I love #{topping_one} and #{topping_two} on my pizza")
+    element_index += 1
   end
   row_index += 1
 end
