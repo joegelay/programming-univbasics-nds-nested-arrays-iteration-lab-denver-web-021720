@@ -63,7 +63,7 @@ while row_index < src.count do
   while element_index < src[row_index].count do
     
     if ((src[row_index][element_index] % 2 == 0) && (src[row_index][element_index + 1] % 2 == 0))
-      greater_num = src[row_index][element_index + 1]
+      
     end
     even_pair_totals.push(greater_num)
     element_index += 2
