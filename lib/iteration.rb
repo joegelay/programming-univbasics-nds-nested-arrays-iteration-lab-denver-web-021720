@@ -32,7 +32,7 @@ while row_index < src.count do
       topping_one = src[row_index][element_index]
       element_index += 1
       topping_two = src[row_index][element_index]
-      inner_results << """"src[row_index][element_index]""""
+      inner_results << src[row_index][element_index]
       
   end
   outer_results << inner_results
