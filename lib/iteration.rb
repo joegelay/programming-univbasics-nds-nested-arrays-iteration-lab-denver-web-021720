@@ -44,7 +44,6 @@ while row_index < src.count do
 end
   
 return greater_pairs
-  
 end
 
 def total_even_pairs(src)
