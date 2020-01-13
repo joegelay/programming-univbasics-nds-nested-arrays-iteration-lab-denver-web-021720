@@ -12,13 +12,13 @@ pizza_love = []
 while row_index < src.count do
   element_index = 0
   while element_index < src[row_index].count do
-    puts src[row_index][element_index]
+    pizza_love.push(src[row_index][element_index])
     element_index += 1
   end
   row_index += 1
 end
   
-  
+return pizza_love
 end
 
 def find_greater_pair(src)
