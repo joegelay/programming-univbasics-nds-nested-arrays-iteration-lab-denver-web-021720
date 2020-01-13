@@ -29,7 +29,7 @@ def find_greater_pair(src)
   # that are in the inner Arrays
   
 row_index = 0
-greater_pair = []
+greater_pairs = []
 while row_index < src.count do
   element_index = 0
   while element_index < src[row_index].count do
@@ -38,7 +38,7 @@ while row_index < src.count do
     if (src[row_index][element_index + 1] > greater_num)
       greater_num = src[row_index][element_index + 1]
       
-    greater_pair.push(greater_num)
+    greater_pairs.push(greater_num)
     element_index += 2
   end
   row_index += 1
