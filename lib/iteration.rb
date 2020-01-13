@@ -69,6 +69,6 @@ while row_index < src.count do
   row_index += 1
 end
   
-return even_pair_totals
+return even_pairs_sum
   
 end
