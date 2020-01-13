@@ -61,8 +61,8 @@ even_pair_totals = []
 while row_index < src.count do
   element_index = 0
   while element_index < src[row_index].count do
-    greater_num = src[row_index][element_index]
-    if (src[row_index][element_index + 1] > greater_num)
+    
+    if ((src[row_index][element_index] % 2 == 0) && (src[row_index][element_index + 1] % 2 == 0))
       greater_num = src[row_index][element_index + 1]
     end
     even_pair_totals.push(greater_num)
