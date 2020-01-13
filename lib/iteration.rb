@@ -7,20 +7,39 @@ def join_ingredients(src)
   # "I love (inner array element 0) and (inner array element 1) on my pizza""
   # As such, there should be a new String for each inner array, or pair
   
+# row_index = 0
+# pizza_love = []
+# while row_index < src.count do
+#   element_index = 0
+#   while element_index < src[row_index].count do
+#     topping_one = src[row_index][element_index]
+#     element_index += 1
+#     topping_two = src[row_index][element_index]
+#     pizza_love.push("I love #{topping_one} and #{topping_two} on my pizza")
+#   end
+#   row_index += 1
+# end
+  
+# return pizza_love
+
+
+outer_results = []
 row_index = 0
-pizza_love = []
 while row_index < src.count do
   element_index = 0
+  inner_results = []
   while element_index < src[row_index].count do
-    topping_one = src[row_index][element_index]
+    if src[row_index][element_index][0] == "P"
+      inner_results << src[row_index][element_index]
+    end
     element_index += 1
-    topping_two = src[row_index][element_index]
-    pizza_love.push("I love #{topping_one} and #{topping_two} on my pizza")
   end
+  outer_results << inner_results
   row_index += 1
 end
-  
-return pizza_love
+
+
+
 
 end
 
