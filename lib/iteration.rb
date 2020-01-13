@@ -43,7 +43,7 @@ while row_index < src.count do
   row_index += 1
 end
   
-return greater_pair
+return greater_pairs
 end
   
 end
